@@ -1,0 +1,187 @@
+body, html { 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%; /* Allows the body to extend beyond the viewport height if needed */
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Styles for the map container */
+#map {
+  width: 100%; /* Full width of the container */
+  height: 500px; /* Set height or adjust as necessary */
+  margin: auto; /* Center the map container */
+  border: 1px solid #ccc; /* Optional: adds a border around the map */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+  min-height: 500px; 
+  flex: 0 0 500px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  #map {
+      height: 300px; /* Smaller height for smaller devices */
+  }
+}
+
+/* Styles for the App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Adjusted to fill the viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(241, 241, 197);
+}
+
+.App-header {
+  background-color: #f6c389;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f6c389;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styles for main content area */
+.main {
+  padding: 20px;
+  background-color: #fbe3e3; /* Pastel pink */
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  color: #7c7676; /* Keeping it black for readability */
+  font-weight: bold;
+}
+
+.button {
+  background-color: #ff9e80; /* Lighter coral */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button:hover {
+  background-color: #ff6e40; /* A slightly darker shade of coral on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f6c389;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  margin: auto; /* Center the modal on the page */
+  display: flex;
+  flex-direction: column; /* Organize children elements in a column */
+  align-items: center; /* Center-align the items */
+}
+
+.modal-content form {
+  width: 100%; /* Use full width of the modal content area */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 10px; /* Space between grid items */
+}
+
+.modal-content input,
+.modal-content label {
+  width: 100%; /* Full width */
+  margin-bottom: 10px; /* Space below each item */
+}
+
+.modal-content button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #ff9e80; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.modal-content button:hover {
+  background-color: #ff6e40; /* Darker shade on hover */
+}
+
+.close-button {
+  position: absolute; /* Position absolutely within the modal */
+  top: 10px; /* Top offset */
+  right: 10px; /* Right offset */
+  font-size: 50px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold;
+}
+
+nav ul li button {
+  font-weight: bold;
+  background: none; /* Remove any default background */
+  border: none; /* Remove borders */
+  color: white; /* Match the text color of your links */
+  font-size: 16px; /* Match the font size of your links */
+  cursor: pointer; /* Ensure it has a cursor pointer */ /* Padding to match your links */
+  font-family: 'Times New Roman', Times, serif; /* Optional: match your font style */
+}
+
+nav ul li button:hover {
+  background-color: #ff6e40; /* Slightly darker shade on hover, similar to your other links */
+}
